@@ -1,0 +1,14 @@
+extends layout
+
+block content 
+
+    link(rel="stylesheet", href="./css/error.css")
+    div#error_div     
+        div#fondo-error
+        div#icono-error
+
+        button#error_regresar
+            a(href='/') Regresar
+
+        div.error_info
+            p=error.stack

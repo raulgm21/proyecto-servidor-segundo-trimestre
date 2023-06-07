@@ -1,0 +1,134 @@
+extends layout.pug 
+
+block content
+    
+    -if(usuario != null)
+
+        //- PERFIL ADMIN
+        -if(usuario.rol == "admin")
+            h1#cabeceraAdmin ¡ Perfil de Administración - Estadísticas !
+            //- Canvas Central
+            canvas(id="MiGrafica", width="640", height="640")
+            //- Canvas Vegetariano
+            canvas(id="CanvasVegetariano", width="280", height="280")
+            //- Canvas Vegano
+            canvas(id="CanvasVegano", width="280", height="280")
+            //- Canvas Vegano
+            canvas(id="CanvasGluten", width="280", height="280")
+            //- Canvas Media
+            canvas(id="CanvasMedia", width="640", height="280")
+            div#taparUno
+            div#taparDos
+            button#refresh Nuevos Análisis
+                
+            
+            button.botonPagina#pagina1 1
+            button.botonPagina#pagina2 2
+            button.botonPagina#pagina3 3
+            button.botonPagina#pagina4 4
+            button.botonPagina#pagina5 5
+            button.botonPagina#pagina6 6
+            button.botonPagina#pagina7 7
+            button.botonPagina#pagina8 8
+            button.botonPagina#pagina9 9
+            button.botonPagina#pagina10 10
+
+            -if(restaurantes.length)
+                
+                        each restaurante in restaurantes 
+
+                            p.texto_vegetariano #{restaurante.vegetariano}
+                            p.texto_vegano #{restaurante.vegano}
+                            p.texto_singluten #{restaurante.sin_gluten}
+
+                            p.texto_comida #{restaurante.comida}
+                            p.texto_precio #{restaurante.precio}
+                            p.texto_servicio #{restaurante.servicio}
+                            p.texto_ambiente #{restaurante.ambiente}
+
+                            p.texto_pais #{restaurante.pais}
+                            p.texto_restaurante #{restaurante.nombre_restaurante}
+                            p.texto_provincia #{restaurante.provincia}
+                            p.texto_direccion #{restaurante.direccion}
+                            p.texto_region #{restaurante.region}
+
+                        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js")
+                        
+                        script(type="text/javascript", src="./js/grafica_central.js")
+
+                        script(type="text/javascript", src="./js/grafica_paginacion.js")
+                        script(type="text/javascript", src="./js/apirest.js")
+                        
+
+            div#adminREST
+                h1#cabeceraAdmin2 ¡ Perfil de Administración - REST !
+                p#textoAdmin2 Inserte los Parámetros Exactos para una Búsqueda más Aproximada
+
+                form#rest-form
+                    label.rest-label#pais-label País
+                    input.rest-input#pais-input(type="text" name="pais" readonly="readonly")
+                    input.rest-input#buscar-submit(type="button" value="Buscar")
+                    
+                    
+       
+                include mapa.pug     
+                      
+                                             
+        //- PERFIL USUARIO
+        -else
+            
+            h1#cabeceraUser ¡ Le damos las bienvenida #{usuario.nombre} !
+            div#fondoUsuario
+            p#textoUsuario Busca tú restaurante idóneo en simples pasos
+
+            form#user-form
+
+                label.user-label#pais-user-label País
+                input.user-input#pais-user-input(type="text" name="pais" readonly="readonly")
+
+                label.user-label#region-user-label Región
+                input.user-input#region-user-input(type="text" name="region")
+
+                label.user-label#provincia-user-label Provincia
+                input.user-input#provincia-user-input(type="text" name="provincia")
+
+                label.user-label#ciudad-user-label Ciudad - Pueblo
+                input.user-input#ciudad-user-input(type="text" name="ciudad")
+
+                
+
+                label.user-label#vegetariano-user-label Vegetariano
+                img.user-label-input-vegetariano#vegetariano-user-label-si(src= "./img/Y.png")
+                input.user-input#vegetariano-user-input(type="radio" name="vegetariano" value="Y") 
+                img.user-label-input-vegetariano#vegetariano-user-label-na(src= "./img/I.png")
+                input.user-input#vegetariano-user-input(type="radio" name="vegetariano" value="N/A") 
+                img.user-label-input-vegetariano#vegetariano-user-label-no(src= "./img/N.png")
+                input.user-input#vegetariano-user-input(type="radio" name="vegetariano" value="N") 
+
+                label.user-label#vegano-user-label Vegano
+                img.user-label-input-vegano#vegano-user-label-si(src= "./img/Y.png")
+                input.user-input#vegano-user-input(type="radio" name="vegano" value="Y") 
+                img.user-label-input-vegano#vegano-user-label-na(src= "./img/I.png")
+                input.user-label#vegano-user-input(type="radio" name="vegano" value="N/A") 
+                img.user-label-input-vegano#vegano-user-label-no(src= "./img/N.png")
+                input.user-label#vegano-user-input(type="radio" name="vegano" value="N") 
+
+                label.user-label#singluten-user-label Sin Gluten
+                img.user-label-input-singluten#singluten-user-label-si(src= "./img/Y.png")
+                input.user-label#singluten-user-input(type="radio" name="singluten" value="Y") 
+                img.user-label-input-singluten#singluten-user-label-na(src= "./img/I.png")
+                input.user-label#singluten-user-input(type="radio" name="singluten" value="N/A") 
+                img.user-label-input-singluten#singluten-user-label-no(src= "./img/N.png")
+                input.user-label#singluten-user-input(type="radio" name="singluten" value="N") 
+
+
+                input.user-input#buscar-user-submit(type="button" value="Buscar")
+                 
+            include mapa_user.pug 
+
+            script(type="text/javascript", src="./js/user.js")
+
+    //- NO EXISTE EL USUARIO      
+    -else
+        script.
+            location.href ='/';           

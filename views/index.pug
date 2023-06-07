@@ -1,0 +1,37 @@
+extends layout.pug 
+
+block content
+
+    div#fondo
+    div#foto_logo
+    div#cuerpo
+
+    p#borrar
+ 
+    //-include mapa_index.pug
+    
+    form#home-form(method="POST" action='/home')
+            h1#home-login Login
+            label#correo-label Correo
+            input#home-input.correo-input(type="text" name="correo")
+            label#password-label Contraseña
+            input#home-input.password-input(type="password" name="password")
+            input#home-input.login-submit(type="submit" value="Iniciar Sesión")
+            p#texto-registro ¿No tienes cuenta?. Registrate :)
+    div#form-imagen-login   
+    p#footer-text.acerdade Acerca de 
+    p#footer-text.contactanos Contáctanos
+    p#footer-text.terminosycondiciones Términos y Condiciones
+    p#footer-text.privacidaddedatos Privacidad de Datos 
+    p#footer-text.avisolegal Aviso Legal
+
+           
+    script(type="text/javascript", src="./js/cookies.js")                 
+    script(type="text/javascript", src="./js/scroll_index.js") 
+    script(type="text/javascript", src="./js/registro-footer.js") 
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.6.0.min.js")
+    
+
+
+
+        
