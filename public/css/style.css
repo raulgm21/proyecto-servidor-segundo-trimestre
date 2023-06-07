@@ -1,0 +1,416 @@
+@font-face {
+    font-family: Galantis;
+    src: url("./fonts/Galantis.otf") format("opentype");
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 500vh;
+    max-height: 3800px;
+}
+
+
+
+#tablaAdmin{
+    
+    padding : 6px;
+    position: relative;
+    left : 5%;
+    top : -0px;
+    max-width: 90%;
+    min-width: 90%;
+    font-family: Galantis;
+}   
+
+#tablaAdmin th, #tablaAdmin td{
+    padding : 12px;
+    text-align: center;
+    min-width: 120px;
+    max-width: 120px;
+  
+}
+
+#tablaAdmin th{
+    font-size: 24px;;
+    color : white;
+    background-color: crimson;
+}
+
+#tablaAdmin td{
+    font-family: monospace;
+}
+
+#filaTabla img{
+    position: relative;
+    left : 36px;
+    top : 8px;
+}
+
+#foto_logo{
+    background-image: url("../img/logo.png");
+    background-size : contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    opacity: 1;
+    top : 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#fondo{
+    background-image: url("../img/fondo.png");
+    background-size : 100%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 100vh;
+    width: 105%;
+    position: relative;
+    margin : -12px;
+
+}
+
+#form-imagen-login{
+    max-height: 600px;
+    display: block;
+}
+#home-form{
+    position: relative;
+    top : 128px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 640px;
+    width: 70%;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    border-radius: 16px;
+}
+
+#login_imagen{
+    position: relative;
+    height: 645px;
+    width: 35%;
+    left: 59%;
+    top : -516px;
+    transform: translateX(-25%);
+    display:block;
+}
+
+#home-login{
+    font-family: monospace;
+    color : rgb(255, 255, 255);
+    font-size: 64px;
+    text-shadow: 5px 3px 0px rgb(0, 0, 0);
+    position: absolute;
+    left : 18%;
+}
+
+#home-input{
+    position: relative;
+    padding: 16px;
+    width: 256px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+}
+
+#correo-label{
+    position: relative;
+    top : 188px;
+    left : 236px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+#password-label{
+    position: relative;
+    top : 208px;
+    left : 208px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.correo-input{
+    position: relative;
+    top : 200px;
+    left : 128px;
+}
+
+.password-input{
+    position: relative;
+    top : 220px;
+    left : 128px;
+    cursor: pointer;
+}
+
+.login-submit{
+    width: 128px;
+    position: relative;
+    top : 240px;
+    left : 148px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 600;
+} 
+
+.login-submit:hover{
+    transition: 1s;
+    background-color: crimson;
+    color : white;
+}
+
+#texto-registro{
+    position: relative;
+    top : 280px;
+    text-decoration: underline;
+    left : 16%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color :crimson;
+}
+
+
+#footer{
+    height: 480px;
+    position: absolute;
+    left : -5%;
+    top : 3328px;
+    display:block;
+}
+
+
+
+
+
+#footer-text{
+    position: relative;
+    text-align: right ;
+    top : -288px;
+    left : 76%;
+    font-family: monospace;
+    font-size: 24px;
+    cursor: pointer;
+    max-width: 300px;
+    
+}
+
+#footer-text:hover{
+    transition: 0.4s;
+    color: crimson;
+    text-decoration: underline;
+    
+}
+
+
+#registro_imagen{
+    position: relative;
+    height: 645px;
+    width: 35%;
+    left: 59%;
+    top : -3132px;
+    transform: translateX(-25%);
+    display:block;
+}
+
+.texto_region, .texto_direccion, .texto_provincia, .texto_pais, .texto_restaurante, .texto_vegetariano, .texto_vegano, .texto_singluten, .texto_comida,.texto_precio, .texto_servicio, .texto_ambiente {
+    display: none;
+}
+
+
+#CanvasVegetariano{
+    position: absolute;
+    top : 160px;
+    left : 44%;
+}
+
+#CanvasVegano{
+    position: absolute;
+    top : 160px;
+    left : 62%;
+}
+
+#CanvasGluten{
+    position: absolute;
+    top : 160px;
+    left : 80%;
+}
+
+#CanvasMedia{
+    position: absolute;
+    top : 460px;
+    left : 50%;
+    
+}
+
+#cabeceraAdmin{
+    background-image: url("../img/cabeceraAdmin.png");
+    object-position: center;
+    background-position: center;
+    text-align: center;
+    font-family: Galantis;
+    position: relative;
+    top : -16px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color : rgb(255, 255, 255);
+    font-size: 52px;
+    text-shadow: 5px 3px 0px rgb(0, 0, 0);
+}
+
+#vegetariano_img, #vegano_img, #sin_gluten_img{
+    height: 128px;
+    width: 128px;
+    object-position: center;
+    z-index: -1;
+}
+
+#vegetariano_img{
+    position: absolute;
+    top : 254px;
+    left: 48.7%;
+    width: 136px;
+}
+
+#vegano_img{
+    position: absolute;
+    top : 252px;
+    left: 67.2%;
+}
+
+#sin_gluten_img{
+    position: absolute;
+    top : 244px;
+    left: 84.2%;
+    height: 148px;
+    width: 148px;
+}
+
+.imagenes_barra{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top : 716px;
+    
+}
+
+#comida_img{
+    position: absolute;
+    left : 54%;
+}
+
+#dinero_img{
+    position: absolute;
+    left : 64%;
+}
+
+#servicio_img{
+    position: absolute;
+    left : 73.5%;
+}
+
+#ambiente_img{
+    position: absolute;
+    left : 83%;
+}
+
+#bandera_img{
+    position: absolute;
+    top : 180px;
+    left : 12px;
+    width: 636px;
+    height: 190px;
+    border-radius: 32px;
+    object-position: center;
+}
+
+#taparUno{
+    position: absolute;
+    top : 168px;
+    
+    left : 45%;
+    width: 800px;
+    height: 18px;
+    background-color: white;
+    
+}
+
+#taparDos{
+    position: absolute;
+    top : 460px;
+    left : 45%;
+    width: 800px;
+    height: 24px;
+    background-color: white;
+
+}
+
+.botonPagina{
+    position: relative;
+    left : 50%;
+    top : -16px;
+    padding: 8px;
+    width: 64px;
+    border-radius: 9999px;
+    border : none;
+    font-family: monospace;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.botonPagina:hover{
+    transition: 0.5s;
+    background-color: crimson;
+    color : white;
+}
+
+#refresh{
+    position: relative;
+    padding: 16px;
+    width: 256px;
+    top : 32px;
+    left : 196px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+#refresh:hover{
+    transition: 1s;
+    background-color: crimson;
+    color : white;
+}
+
+/* ADMIN REST*/
+#adminREST{
+    position: absolute;
+    top : 2056px;
+    width: 100%;
+
+}
+#cabeceraAdmin2{
+    background-image: url("../img/cabeceraAdmin.png");
+    object-position: center;
+    background-position: center;
+    text-align: center;
+    font-family: Galantis;
+  
+    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color : rgb(255, 255, 255);
+    font-size: 52px;
+    text-shadow: 5px 3px 0px rgb(0, 0, 0);
+}

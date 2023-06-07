@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Galantis;
+    src: url("./fonts/Galantis.otf") format("opentype");
+}
+
+
+.mapadiv{
+    position: absolute;
+    left : 30%;
+    top : 128px;
+    width: 70%;
+    margin: auto;
+}
+.mapadiv path{
+    fill : rgb(252, 200, 200);
+    stroke : rgb(133, 3, 3);
+    stroke-width: 2px;
+}
+
+.mapadiv :hover{
+    fill : crimson;
+}
+
+@font-face {
+    font-family: Galantis;
+    src: url("./fonts/Galantis.otf") format("opentype");
+}
+
+.rest-input{
+    margin : 16px;
+    position: relative;
+    padding: 16px;
+    width: 256px;
+    top : 24px;
+    left : 132px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.rest-label{
+    margin : 16px;
+    position: relative;
+    top : 24px;
+    left : 232px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+#provincia-label{
+    position: relative;
+    left : 216px;
+}
+
+#municipio-label{
+    position: relative;
+    left : 216px;
+}
+
+#pais-label{
+    position: relative;
+    left : 242px;
+}
+
+#label_region{
+    position: relative;
+    top : -40px;
+    left : 230px;
+}
+
+#label_provincia{
+    position: relative;
+    top : -40px;
+    left : 120px;
+}
+
+#input_pueblo{
+    position: relative;
+    top : -114px;
+    left : 310px;
+    width: 216px;
+
+}
+#select_region{
+    position: relative;
+    top : -40px;
+    left : 148px;
+}
+
+#select_provincia{
+    position: relative;
+    top : -40px;
+    left : 34px;
+}
+
+#buscar_region{
+    position: relative;
+    top : -32px;
+}
+
+#buscar_provincia{
+    position: relative;
+    top : -116px;
+   
+}
+
+#buscar-submit, #buscar_region, #buscar_provincia{
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 600;
+    width: 288px;
+}
+
+#buscar-submit:hover, #buscar_region:hover, #buscar_provincia:hover{
+    transition: 1s;
+    background-color: crimson;
+    color : white;
+}
+
+#textoAdmin2{
+    max-width: 264px;
+    min-width: 264px;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left : 156px;
+    top : 8px;
+    background-color: crimson;
+    color : white
+}
+
+#rest-bandera{
+    position: relative;
+    top : -132px;
+    left : 54px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#tabla_rest{
+    
+    padding : 6px;
+    position: relative;
+    left : 4%;
+    top : 1118px;
+    max-width: 90%;
+    min-width: 90%;
+    font-family: Galantis;
+}   
+
+#tabla_rest th, #tabla_rest td{
+    padding : 12px;
+    text-align: center;
+    min-width: 120px;
+    max-width: 120px;
+  
+}
+
+#tabla_rest th{
+    font-size: 24px;;
+    color : white;
+    background-color: crimson;
+}
+
+#tabla_rest td{
+    font-family: monospace;
+}
+
+
+.rest_editar{
+    background-color: rgb(62, 62, 143);
+    color : #fff;
+}
+
+#rest_eliminar{
+    background-color: rgb(113, 5, 16);
+    color : #fff;
+}
+
+#rest_nuevo{
+    background-color: rgb(71, 141, 25);
+    color : #fff;
+    position: relative;
+    top : 16px;
+}
+
+.rest_button, .rest_editar{
+    margin : 4px;
+    padding: 8px;
+    border-radius: 9999px;
+    width: 128px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* eliminar */
+
+#modal_aceptar_eliminar{
+    padding:  8px;
+    border-radius: 9999px;
+    width: 128px;
+    color : white;
+    background-color: rgb(113, 5, 16);
+    position: relative;
+    left: 108px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+}
+#modal_atras_eliminar{
+    padding:  8px;
+    border-radius: 9999px;
+    width: 128px;
+    color : white;
+    background-color: rgb(132, 120, 121);;
+    position: relative;
+    left: 108px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* editar */
+
+#editar_aceptar{
+    padding:  8px;
+    border-radius: 9999px;
+    width: 128px;
+    color : white;
+    background-color: rgb(39, 71, 235);
+    position: relative;
+    left: 108px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 4px;
+    position: relative;
+    top : -64px;
+    left : -12px;
+}
+
+#editar_atras{
+    padding:  8px;
+    border-radius: 9999px;
+    width: 128px;
+    color : rgb(8, 8, 8);
+    background-color: rgb(161, 231, 252);
+    position: relative;
+    left: 108px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 4px;
+    position: relative;
+    top : -64px;
+    left : -12px;
+}
+        
+#input_editar{
+    border: none;
+    border-bottom: 1px black solid;
+    font-family: monospace;
+    font-size: 16px;
+    width: 128px;
+    height: 80px;
+    resize: none;
+}

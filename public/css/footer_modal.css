@@ -1,0 +1,358 @@
+@font-face {
+    font-family: Galantis;
+    src: url("./fonts/Galantis.otf") format("opentype");
+}
+
+#atras_modal{
+
+    cursor: pointer;
+    
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    /* Ajusta el ancho y la altura de la imagen según tus necesidades */
+    width: 72px;
+    height: 72px;
+    
+    margin : 8px;
+}
+
+#modal_acercade{
+    height: 1080px;
+    width: 1080px;
+    border : none;
+    overflow-y: hidden;
+}
+
+#titulo_modal{
+    background-color: crimson;
+    font-size: 32px;
+    color : #fff;
+    font-family: Galantis;
+    text-align: center;
+}
+
+#ACERCADE_parrafo_modal{
+    display: flex;
+    font-size: 22px;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 600;
+    margin : 4px;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.acercade_img{
+    cursor: pointer;
+    height: 240px;
+    width: 480px;
+    object-fit: center;
+    object-position: center;
+    flex-flow: wrap row;
+    position: relative;
+    left : 32px;
+    margin: 12px;
+    padding: 4px;
+    border-radius: 64px;
+    border-bottom:6px solid rgb(0, 0, 0);
+    
+}
+
+#modal_avisolegal, #modal_privacidaddatos, #modal_terminoscondiciones, #modal2_cookies, #modal_registro, #modal_insertar, #modal_editar{
+    height: 640px;
+    width: 75%;
+    border : none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#textoFICHEROS_modal, #textoCOOKIES_modal{
+    font-family: monospace;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+
+
+#modal_cookies{
+    overflow-y: hidden;
+    height: 320px;
+    width: 30%;
+    border : none;
+}
+
+#texto_cookies{
+    font-family: monospace;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.botones_cookies{
+    padding: 16px;
+    border-radius: 9999px;
+    font-family: monospace;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.botones_cookies:hover{
+    transition: 0.5s;
+    background-color: crimson;
+    color : #fff;
+}
+
+#aceptar_cookies{
+    position: relative;
+    left : 48px;
+}
+
+
+
+
+
+
+#texto_contacto{
+    max-width: 300px;
+    min-width: 300px;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left : 124px;
+}
+
+#texto_insertar{
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    margin : 4px;
+}
+
+
+
+#formulario_contacto input{
+    padding: 16px;
+    width: 256px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+}
+
+#formulario_contacto textarea{
+    padding: 16px;
+    width: 256px;
+    border-radius: 8px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+    resize: none;
+}
+
+#formulario_contacto select{
+    padding: 16px;
+    width: 256px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+}
+
+
+#imagen_contacto{
+    position: absolute;
+    top : 140px;
+    left : 50%;
+}
+
+#correo_contacto{
+    position: relative;
+    left : 128px;
+    top : 16px;
+
+}
+
+#asunto_contacto{
+    position: relative;
+    left : 148px;
+    top : 16px;
+    
+}
+
+#submit_contacto{
+    position: relative;
+    left : 148px;
+    top : 32px;
+    font-size: 32px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#submit_contacto:hover{
+    background-color: crimson;
+    transition: 0.5s;
+    color : #fff;
+    
+}
+
+#descripcion_contacto{
+    position: relative;
+    left : 128px;
+    top : 16px;
+    
+}
+
+#label_correo_contacto{
+    position: relative;
+    top : 16px;
+    left : 236px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+#label_asunto_contacto{
+    position: relative;
+    top : 16px;
+    left : 236px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+#label_descripcion_contacto{
+    position: relative;
+    top : 16px;
+    left : 206px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+#formulario_registro input{
+    padding: 16px;
+    width: 256px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+    position: relative;
+    left : 128px;
+}
+
+.label_registro{
+    font-family: monospace;
+    font-size: 18px;
+  
+}
+
+#label_correo_registro{
+    position: relative;
+    left : 240px;
+}
+
+#label_nombre_registro{
+    position: relative;
+    left : 240px;
+}
+
+#label_contraseña_registro{
+    position: relative;
+    left : 220px;
+}
+
+#label_edad_registro{
+    position: relative;
+    left : 252px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+#formu_insertar input , #formu_editar input{
+
+    padding: 16px;
+    width: 256px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 20px;
+    display : block;
+}
+
+.insertar_1 , .editar_1{
+    position: relative;
+    top : 24px;
+    left : 48px;
+}
+
+.insertar_2{
+    position: relative;
+    top : -370px;
+    left : 420px;
+    width: 64px;
+}
+
+
+
+#label_region_insertar, #label_region_editar{
+
+    position: relative;
+    left : 48px;
+    top : 24px;
+}
+.insertar_3{
+    position: relative;
+    top : -684px;
+    left : 800px;
+    width: 64px;
+}
+
+
+.editar_2{
+    position: relative;
+    top : -54px;
+    left : 420px;
+    width: 64px;
+}
+
+.editar_3{
+    position: relative;
+    top : -372px;
+    left : 800px;
+    width: 64px;
+}
+
+#insertar_enviar, #editar_enviar{
+    position: absolute;
+    top : 556px;
+    left : 45%;
+    cursor: pointer;
+}   
+
+#insertar_enviar:hover, #editar_enviar:hover{
+    background-color : crimson;
+    color : #fff;
+    transition: 1s;
+}

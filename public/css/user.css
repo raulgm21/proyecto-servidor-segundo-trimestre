@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Galantis;
+    src: url("./fonts/Galantis.otf") format("opentype");
+}
+
+
+#cabeceraUser{
+    background-image: url("../img/cabeceraUsuario.png");
+    background-position: center;
+    text-align: center;
+    font-family: Galantis;
+    position: relative;
+    top : -16px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color : rgb(255, 255, 255);
+    font-size: 44px;
+    text-shadow: 5px 3px 0px rgb(0, 0, 0);
+}
+
+#fondoUsuario{
+    background-image: url("../img/fondo_usuario.png");
+    background-size : 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 102vh;
+    width: 105%;
+    position: absolute;
+    margin : -12px;
+    top : 0px;
+
+}
+
+#textoUsuario{
+    font-family: monospace;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    top : 640px;
+
+}
+
+.mapadivUser{
+    position: absolute;
+    left : -10%;
+    top : 720px;
+    width: 70%;
+    margin: auto;
+}
+.mapadivUser path{
+    fill : rgb(101, 227, 126);
+    stroke : rgb(12, 79, 2);
+    stroke-width: 2px;
+}
+
+.mapadivUser :hover{
+    fill : rgb(14, 169, 19);
+}
+
+.user-label{
+    margin : 16px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+
+#user-form{
+    position: absolute;
+    top : 1080px;
+    left : 60%;
+   
+}
+
+#user-form input, #user-form label{
+    display: block;
+}
+
+#user-form input{
+    margin : 16px;
+    padding: 16px;
+    width: 256px;
+    border-radius: 9999px;
+    display: block;
+    border:none;
+    border-bottom:6px solid rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 18px;
+}
+
+#pais-user-label{
+    position: relative;
+    top : -180px;
+    left : -36px;
+}
+
+#pais-user-input{
+    position: relative;
+    top : -180px;
+    left : -148px;
+}
+
+#provincia-user-label{
+    position: relative;
+    top : -280px;
+    left : -64px;
+}
+
+#provincia-user-input{
+    position: relative;
+    top : -280px;
+    left : -148px;
+}
+
+#region-user-label{
+    position: relative;
+    top : -300px;
+    left : 328px;
+}
+
+#region-user-input{
+    position: relative;
+    top : -300px;
+    left : 236px;
+}
+
+#ciudad-user-label{
+    position: relative;
+    top : -400px;
+    left : 288px;
+}
+
+#ciudad-user-input{
+    position: relative;
+    top : -400px;
+    left : 236px;
+}
+
+#vegetariano-user-label{
+    position: relative;
+    top : -380px;
+    left : -128px;
+}
+
+#vegano-user-label{
+    position: relative;
+    top : -670px;
+    left : 140px;
+}
+
+#singluten-user-label{
+    position: relative;
+    top : -960px;
+    left : 360px;
+}
+
+
+
+
+.user-label-input-vegetariano{
+    position: relative;
+    top : -360px;
+    left : -88px;
+    
+}
+
+#vegetariano-user-input{
+    position: relative;
+    top : -404px;
+    left : -138px; 
+}
+
+#vegano-user-input{
+    position: relative;
+    top : -200px;
+    left : -148px; 
+}
+
+
+
+
+.user-label-input-vegano{
+    position: relative;
+    top : -648px;
+    left : 160px; 
+}
+
+#vegano-user-input{
+    position: relative;
+    top : -690px;
+    left : 100px; 
+}
+
+
+
+.user-label-input-singluten{
+    position: relative;
+    top : -932px;
+    left : 390px; 
+}
+
+#singluten-user-input{
+    position: relative;
+    top : -980px;
+    left : 330px; 
+}
+
+
+
+
+#user-form img{
+    height: 32px;
+}
+
+#buscar-user-submit{
+    position: relative;
+    top : -950px;
+    left : 58px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 600;
+    width: 288px;
+}
+
+#buscar-user-submit:hover{
+    transition: 1s;
+    background-color: crimson;
+    color : white;
+}

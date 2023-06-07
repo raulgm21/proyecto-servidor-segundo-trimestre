@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Galantis;
+    src: url("./fonts/Galantis.otf") format("opentype");
+}
+
+
+#primera_imagen{
+    height: 480px;
+    width: 520px;
+
+    animation-name : izquierda;
+    animation-duration : 1.8s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+    animation-direction : normal;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+#primer_texto{
+    font-family: Galantis;
+    position: relative;
+    font-size : 48px;
+    top : -240px;
+    
+
+    animation-name : derecha;
+    animation-duration : 1.8s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+    animation-direction : normal;
+    animation-fill-mode: forwards;
+    display: inline;
+}
+
+#segunda_imagen{
+    height: 480px;
+    width: 520px;
+
+    animation-name : derecha2;
+    animation-duration : 2s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+    animation-direction : normal;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+#segundo_texto{
+    font-family: Galantis;
+    position: relative;
+    font-size : 48px;
+    top : -240px;
+    
+
+    animation-name : izquierda2;
+    animation-duration : 2s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+    animation-direction : normal;
+    animation-fill-mode: forwards;
+    display: inline;
+}
+
+#tercera_imagen{
+    height: 480px;
+    width: 520px;
+
+    animation-name : izquierda3;
+    animation-duration : 1.2s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+    animation-direction : normal;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+#tercer_texto{
+    font-family: Galantis;
+    position: relative;
+    font-size : 36px;
+    top : -240px;
+
+
+    animation-name : derecha3;
+    animation-duration : 1.2s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+    animation-direction : normal;
+    animation-fill-mode: forwards;
+    display: inline;
+}
+
+@keyframes izquierda {
+    0%{
+        position: relative;
+        left : 90%;
+    }
+    100%{
+        position: relative;
+        left : 60%;
+    }
+}
+
+@keyframes derecha {
+    0%{
+        position: relative;
+        left : -40%;
+    }
+    100%{
+        position: relative;
+        left : 15%;
+    }
+}
+
+@keyframes izquierda2 {
+    0%{
+        position: relative;
+        left : 90%;
+    }
+    100%{
+        position: relative;
+        left : 50%;
+    }
+}
+
+@keyframes derecha2 {
+    0%{
+        position: relative;
+        left : -40%;
+    }
+    100%{
+        position: relative;
+        left : 10%;
+    }
+}
+
+@keyframes izquierda3 {
+    0%{
+        position: relative;
+        left : 90%;
+    }
+    100%{
+        position: relative;
+        left : 60%;
+    }
+}
+
+@keyframes derecha3 {
+    0%{
+        position: relative;
+        left : -50%;
+    }
+    100%{
+        position: relative;
+        left : 5%;
+    }
+}
+
+
+
+#texto_form{
+    position: relative;
+    top : -1300px;
+    text-align: center;
+    font-family: Galantis;
+    background-color: rgb(233, 52, 54);
+    color : rgb(255, 255, 255);
+    
+    text-shadow: 5px 3px 0px rgb(0, 0, 0);
+}
+
+#estrella1{
+    position: relative;
+    top : -1340px;
+    height: 760px;
+    left : -35%;
+    display:block;
+}
+
+#estrella2{
+    position: relative;
+    top : -2080px;
+    height: 760px;
+    left : 85%;
+    display:block;
+}
+
+
+.rrss{
+    display: block;
+    height: 64px;
+    position: relative;
+    left : 67%;
+    top : -1980px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+
